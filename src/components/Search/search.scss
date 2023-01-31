@@ -1,0 +1,47 @@
+.search {
+  background-color: #ffffff;
+  border-radius: 10px;
+  &.expanded {
+    padding: 3rem 2rem;
+  }
+}
+
+.types__checkboxes {
+  ul {
+    display: inline-flex;
+  }
+  input[type="radio"] {
+    appearance: none;
+    border: 2px solid;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 2;
+    &:checked {
+      + label {
+        background-color: greenyellow;
+      }
+    }
+  }
+  label {
+    background-color: purple;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: .25rem .75rem;
+  }
+}
+
+.types__checkbox-container {
+  position: relative;
+}
+
+.types__heading {
+  font-family: 'Quicksand';
+  font-size: 1rem;
+  color: #000000;
+  text-align: center;
+}
+
